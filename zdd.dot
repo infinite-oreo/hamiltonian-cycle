@@ -1,0 +1,175 @@
+digraph "ZDD" {
+  24 [shape=none,label="24"];
+  23 [shape=none,label="23"];
+  22 [shape=none,label="22"];
+  21 [shape=none,label="21"];
+  20 [shape=none,label="20"];
+  19 [shape=none,label="19"];
+  18 [shape=none,label="18"];
+  17 [shape=none,label="17"];
+  16 [shape=none,label="16"];
+  15 [shape=none,label="15"];
+  14 [shape=none,label="14"];
+  13 [shape=none,label="13"];
+  12 [shape=none,label="12"];
+  11 [shape=none,label="11"];
+  10 [shape=none,label="10"];
+  9 [shape=none,label="9"];
+  8 [shape=none,label="8"];
+  7 [shape=none,label="7"];
+  6 [shape=none,label="6"];
+  5 [shape=none,label="5"];
+  4 [shape=none,label="4"];
+  3 [shape=none,label="3"];
+  2 [shape=none,label="2"];
+  1 [shape=none,label="1"];
+  24 -> 23 [style=invis];
+  23 -> 22 [style=invis];
+  22 -> 21 [style=invis];
+  21 -> 20 [style=invis];
+  20 -> 19 [style=invis];
+  19 -> 18 [style=invis];
+  18 -> 17 [style=invis];
+  17 -> 16 [style=invis];
+  16 -> 15 [style=invis];
+  15 -> 14 [style=invis];
+  14 -> 13 [style=invis];
+  13 -> 12 [style=invis];
+  12 -> 11 [style=invis];
+  11 -> 10 [style=invis];
+  10 -> 9 [style=invis];
+  9 -> 8 [style=invis];
+  8 -> 7 [style=invis];
+  7 -> 6 [style=invis];
+  6 -> 5 [style=invis];
+  5 -> 4 [style=invis];
+  4 -> 3 [style=invis];
+  3 -> 2 [style=invis];
+  2 -> 1 [style=invis];
+  "^" [shape=none,label="ZDD"];
+  "^" -> "24:0" [style=dashed];
+  "24:0" [label="24:0"];
+  "24:0" -> "23:0" [style=solid];
+  {rank=same; 24; "24:0"}
+  "23:0" [label="23:0"];
+  "23:0" -> "22:0" [style=solid];
+  {rank=same; 23; "23:0"}
+  "22:0" [label="22:0"];
+  "22:0" -> "21:0" [style=dashed];
+  "22:0" -> "20:0" [style=solid];
+  {rank=same; 22; "22:0"}
+  "21:0" [label="21:0"];
+  "21:0" -> "20:1" [style=solid];
+  {rank=same; 21; "21:0"}
+  "20:1" [label="20:0"];
+  "20:0" [label="20:1"];
+  "20:0" -> "18:0" [style=solid];
+  "20:1" -> "19:0" [style=solid];
+  {rank=same; 20; "20:0"; "20:1"}
+  "19:0" [label="19:0"];
+  "19:0" -> "18:1" [style=solid];
+  {rank=same; 19; "19:0"}
+  "18:1" [label="18:0"];
+  "18:0" [label="18:1"];
+  "18:0" -> "17:0" [style=solid];
+  "18:1" -> "16:0" [style=solid];
+  {rank=same; 18; "18:0"; "18:1"}
+  "17:0" [label="17:0"];
+  "17:0" -> "16:1" [style=dashed];
+  "17:0" -> "15:0" [style=solid];
+  {rank=same; 17; "17:0"}
+  "16:1" [label="16:0"];
+  "16:0" [label="16:1"];
+  "16:0" -> "15:2" [style=solid];
+  "16:1" -> "15:1" [style=solid];
+  {rank=same; 16; "16:0"; "16:1"}
+  "15:2" [label="15:0"];
+  "15:1" [label="15:1"];
+  "15:0" [label="15:2"];
+  "15:0" -> "14:2" [style=dashed];
+  "15:0" -> "12:0" [style=solid];
+  "15:1" -> "14:1" [style=solid];
+  "15:2" -> "14:0" [style=dashed];
+  "15:2" -> "11:0" [style=solid];
+  {rank=same; 15; "15:0"; "15:1"; "15:2"}
+  "14:2" [label="14:0"];
+  "14:1" [label="14:1"];
+  "14:0" [label="14:2"];
+  "14:0" -> "12:1" [style=solid];
+  "14:1" -> "13:1" [style=solid];
+  "14:2" -> "13:0" [style=solid];
+  {rank=same; 14; "14:0"; "14:1"; "14:2"}
+  "13:1" [label="13:0"];
+  "13:0" [label="13:1"];
+  "13:0" -> "12:3" [style=solid];
+  "13:1" -> "12:2" [style=dashed];
+  "13:1" -> "9:0" [style=solid];
+  {rank=same; 13; "13:0"; "13:1"}
+  "12:3" [label="12:0"];
+  "12:2" [label="12:1"];
+  "12:1" [label="12:2"];
+  "12:0" [label="12:3"];
+  "12:0" -> "11:3" [style=solid];
+  "12:1" -> "11:2" [style=solid];
+  "12:2" -> "11:1" [style=solid];
+  "12:3" -> "10:0" [style=solid];
+  {rank=same; 12; "12:0"; "12:1"; "12:2"; "12:3"}
+  "11:3" [label="11:0"];
+  "11:2" [label="11:1"];
+  "11:1" [label="11:2"];
+  "11:0" [label="11:3"];
+  "11:0" -> "9:3" [style=solid];
+  "11:1" -> "9:2" [style=solid];
+  "11:2" -> "9:1" [style=solid];
+  "11:3" -> "10:1" [style=solid];
+  {rank=same; 11; "11:0"; "11:1"; "11:2"; "11:3"}
+  "10:1" [label="10:0"];
+  "10:0" [label="10:1"];
+  "10:0" -> "9:4" [style=solid];
+  "10:1" -> "9:1" [style=solid];
+  {rank=same; 10; "10:0"; "10:1"}
+  "9:4" [label="9:0"];
+  "9:3" [label="9:3"];
+  "9:2" [label="9:2"];
+  "9:1" [label="9:1"];
+  "9:0" [label="9:4"];
+  "9:0" -> "8:2" [style=solid];
+  "9:1" -> "8:1" [style=solid];
+  "9:2" -> "7:0" [style=solid];
+  "9:3" -> "8:0" [style=solid];
+  "9:4" -> "6:0" [style=solid];
+  {rank=same; 9; "9:0"; "9:1"; "9:2"; "9:3"; "9:4"}
+  "8:2" [label="8:0"];
+  "8:1" [label="8:2"];
+  "8:0" [label="8:1"];
+  "8:0" -> "7:0" [style=solid];
+  "8:1" -> "4:0" [style=solid];
+  "8:2" -> "6:0" [style=solid];
+  {rank=same; 8; "8:0"; "8:1"; "8:2"}
+  "7:0" [label="7:0"];
+  "7:0" -> "5:0" [style=solid];
+  {rank=same; 7; "7:0"}
+  "6:0" [label="6:0"];
+  "6:0" -> "4:0" [style=solid];
+  {rank=same; 6; "6:0"}
+  "5:0" [label="5:0"];
+  "5:0" -> "4:1" [style=solid];
+  {rank=same; 5; "5:0"}
+  "4:1" [label="4:0"];
+  "4:0" [label="4:1"];
+  "4:0" -> "3:1" [style=solid];
+  "4:1" -> "3:0" [style=solid];
+  {rank=same; 4; "4:0"; "4:1"}
+  "3:1" [label="3:0"];
+  "3:0" [label="3:1"];
+  "3:0" -> "1:0" [style=solid];
+  "3:1" -> "2:0" [style=solid];
+  {rank=same; 3; "3:0"; "3:1"}
+  "2:0" [label="2:0"];
+  "2:0" -> "1:0" [style=solid];
+  {rank=same; 2; "2:0"}
+  "1:0" [label="1:0"];
+  "1:0" -> "0:2" [style=solid];
+  {rank=same; 1; "1:0"}
+  "0:2" [shape=square,margin=0.05,width=0,label="T"];
+}
