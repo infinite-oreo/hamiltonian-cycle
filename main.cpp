@@ -13,7 +13,7 @@
 #include <utility>
 #include <vector>
 
-// グラフを表すクラス Graph
+// Graph class
 class Graph {
 private:
   int const s;
@@ -69,7 +69,7 @@ public:
   }
 };
 
-// 入力ファイルの読み込み
+// Read input file
 Graph readGraph(const char* path) {
   std::ifstream ifs(path);
   if (!ifs) {
